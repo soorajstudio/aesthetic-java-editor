@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# aesthetic-java-editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Monaco_Editor-VSCode%20Engine-007ACC?style=flat-square&logo=visualstudiocode" alt="Monaco Editor" />
+  <img src="https://img.shields.io/badge/Google_Gemini-AI%20Assistant-8E75C2?style=flat-square&logo=googlegemini" alt="Gemini AI" />
+  <img src="https://img.shields.io/badge/TailwindCSS-v4-38B2AC?style=flat-square&logo=tailwindcss" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Vite-7-purple?style=flat-square&logo=vite" alt="Vite" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License" />
+</p>
 
-Currently, two official plugins are available:
+A sleek, modern aesthetic web IDE designed for Java programming and ADBMS SQL laboratories. Powered by the Monaco Editor engine, featuring interactive virtual terminal outputs, keyword dictionaries, and Google Gemini AI code debugging.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📸 Hero Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<p align="center">
+  <img src="docs/screenshots/java-editor-hero.png" width="100%" alt="Aesthetic Java Editor IDE Workspace" />
+</p>
 
-## Expanding the ESLint configuration
+## 🖼️ UI Snapshot Gallery
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<p align="center">
+  <img src="docs/screenshots/java-editor-terminal.png" width="49%" alt="Interactive Terminal Output & Execution" />
+  <img src="docs/screenshots/java-editor-adbms.png" width="49%" alt="ADBMS SQL Query Laboratory" />
+</p>
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- ☕ **Comprehensive Java Curriculum** - Preloaded reference implementations spanning OOP principles, data structures, and algorithms.
+- 💾 **ADBMS SQL Query Lab** - Interactive database workbench with table schemas, join queries, and aggregate functions.
+- 🖥️ **Monaco Code Editor** - VS Code-grade code editing with syntax highlighting, bracket matching, line numbering, and indentation.
+- 🤖 **Google Gemini AI Assistant** - Instant AI-powered error diagnostics, line-by-line code explanation, and optimizations.
+- 📖 **Interactive Keyword Dictionaries** - Built-in quick lookup tooltips for essential Java reserved words and SQL statements.
+- 🌓 **Dark & Light Modes** - Ergonomic themes, font-scaling controls, and full-screen distraction-free layout.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19, TypeScript, Vite
+- **Editor Engine**: `@monaco-editor/react` (Microsoft Monaco Editor)
+- **AI Integration**: Google Generative AI SDK (`@google/generative-ai`)
+- **Styling**: Tailwind CSS v4, Lucide Icons
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/soorajstudio/aesthetic-java-editor.git
+cd aesthetic-java-editor
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Install dependencies & run development server
+```bash
+npm install
+npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+Developed with ❤️ by [Sooraj Studio](https://github.com/soorajstudio).
